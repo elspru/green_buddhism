@@ -117,6 +117,11 @@ div.author{white-space: nowrap;}
 h1.partHead{text-align: center}
 .abstract p {margin-left:5%; margin-right:5%;}
 div.abstract {width:100%;}
+.epigraph, .epigraphhead, epigraphs {margin-left:60%}
+.epigraphhead .epigraph {margin-left:0%}
+.episource {text-align:right}
+.epigraphs table { width:40% ;}
+.epigraphs table div .episource { text-align:right; width:100%;}
 dd.enumerate {margin-left: 2em;}
 dt.enumerate {float:left; clear:left; margin-right:0.5em; margin-left:0.5em; text-align:right; }
 .figure img.graphics {margin-left:10%;}
