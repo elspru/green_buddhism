@@ -38,5 +38,6 @@ lualatex $NAME
 biber $NAME
 lualatex $NAME
 htlatex $NAME web
+./clean.sh
 
 echo "done"
