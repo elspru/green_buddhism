@@ -2,15 +2,15 @@
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[english]{babel}
 \RequirePackage{url}
-\RequirePackage{epigraph}
+
 \RequirePackage{hyperref}
 \RequirePackage{enumerate}
 \RequirePackage{standalone}
 \RequirePackage{csquotes}
 \RequirePackage{graphicx}
 \RequirePackage{booktabs}
+%biblatex htlatex workarounds
 \RequirePackage[backend=biber, style=numeric,]{biblatex}
-%htlatex workarounds
 \makeatletter
 \def\blx@shorthands{}
 \makeatother 
@@ -18,3 +18,19 @@
 \newcommand\blx@unitmark{23sp} 
 \makeatother
 \addbibresource{green_buddhism.bib}
+%epigraph
+
+\RequirePackage{epigraph}
+\setlength{\epigraphwidth}{0.618\textwidth}
+%\RequirePackage{calc}
+%
+%\newcommand{\mytextformat}{\epigraphsize}
+%\newenvironment{mytext}{\mytextformat}{}
+%\newenvironment{mysource}{\scshape\hfill}{}
+%\renewcommand{\textflush}{mytext} 
+%\renewcommand{\sourceflush}{mysource}
+%
+%\let\originalepigraph\epigraph{}
+%\renewcommand\epigraph[2]%
+%   {\setlength{\epigraphwidth}{\widthof{\mytextformat#1}}\originalepigraph{#1}{#2}}
+%
