@@ -37,7 +37,9 @@ NAME=green_buddhism
 lualatex $NAME
 biber $NAME
 lualatex $NAME
-htlatex $NAME web
+htlatex $NAME "web,next"
 ./clean.sh
+
+cp green_buddhism.html index.html
 
 echo "done"
