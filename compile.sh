@@ -42,4 +42,6 @@ htlatex $NAME "web,next"
 
 cp green_buddhism.html index.html
 
+docker-compose build
+
 echo "done"
