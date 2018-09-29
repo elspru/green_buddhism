@@ -1,8 +1,8 @@
 aclocal.m4
 config.h.in
 autom4te.cache/
-*.html
 *.tmp
+*.swo
 *.o
 *.a
 *.Po
@@ -10,9 +10,7 @@ autom4te.cache/
 *.so
 *.swp
 *.bbl
-*.html
 *.pdf
-green_buddhism.css
 ar-lib
 depcomp
 install-sh
