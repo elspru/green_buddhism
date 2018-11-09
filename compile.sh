@@ -34,14 +34,16 @@
 
 NAME=green_buddhism
 ./clean.sh
-lualatex $NAME
-biber $NAME
-lualatex $NAME
-htlatex $NAME "web,next"
+lualatex $NAME || exit 1
+biber $NAME || exit 1
+lualatex $NAME || exit 1
+htlatex $NAME "web,next" || exit 1
 ./clean.sh
 
 cp green_buddhism.html index.html
 
-docker-compose build
+docker build -t green_buddhism . || exit 1
+docker tag green_buddhism liberit/green_buddhism:latest
+docker push liberit/green_buddhism:latest
 
 echo "done"
