@@ -1,0 +1,76 @@
+<?xml version="1.0"?> 
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1"><head> 
+<meta name="dtb:uid" content="http://liberit.ca"/> 
+<meta name="dtb:depth" content="3"/> 
+<meta name="dtb:totalPageCount" content="0"/> 
+<meta name="dtb:maxPageNumber" content="0"/> 
+</head> 
+<docTitle> 
+<text>A Trillion Years
+of Earth: on the Spiritual Robot timeline</text> 
+</docTitle> 
+<navMap>      
+<navPoint id="navPoint-1" playOrder="1"> 
+<navLabel> 
+<text>  1  Preface</text> 
+</navLabel> 
+<content src="ebookse1.xhtml#x2-10001" /></navPoint> 
+     
+<navPoint id="navPoint-2" playOrder="2"> 
+<navLabel> 
+<text>  2  The
+Funeral</text> 
+</navLabel> 
+<content src="ebookse2.xhtml#x3-20002" /></navPoint> 
+     
+<navPoint id="navPoint-3" playOrder="3"> 
+<navLabel> 
+<text>  3  Peace on Earth</text> 
+</navLabel> 
+<content src="ebookse3.xhtml#x4-30003" /></navPoint> 
+     
+<navPoint id="navPoint-4" playOrder="4"> 
+<navLabel> 
+<text>  4  Fast Forward</text> 
+</navLabel> 
+<content src="ebookse4.xhtml#x5-40004" /></navPoint> 
+     
+<navPoint id="navPoint-5" playOrder="5"> 
+<navLabel> 
+<text>  5  End of the
+Biosphere</text> 
+</navLabel> 
+<content src="ebookse5.xhtml#x6-50005" /></navPoint> 
+     
+<navPoint id="navPoint-6" playOrder="6"> 
+<navLabel> 
+<text>  6  Archaeological Masterpiece</text> 
+</navLabel> 
+<content src="ebookse6.xhtml#x7-60006" /></navPoint> 
+     
+<navPoint id="navPoint-7" playOrder="7"> 
+<navLabel> 
+<text>  7  Spaceship Earth</text> 
+</navLabel> 
+<content src="ebookse7.xhtml#x8-70007" /></navPoint> 
+ 
+<navPoint id="navPoint-8" playOrder="8"> 
+<navLabel> 
+<text>  8  Cold End Game</text> 
+</navLabel> 
+<content src="ebookse8.xhtml#x9-80008" /></navPoint> 
+     
+<navPoint id="navPoint-9" playOrder="9"> 
+<navLabel> 
+<text>  9  The New Galaxy</text> 
+</navLabel> 
+<content src="ebookse9.xhtml#x10-90009" /></navPoint> 
+     
+<navPoint id="navPoint-10" playOrder="10"> 
+<navLabel> 
+<text>  10  Final Notes</text> 
+</navLabel> 
+<content src="ebookse10.xhtml#x11-1000010" />
+</navPoint> 
+</navMap>
+</ncx> 

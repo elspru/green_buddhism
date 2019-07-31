@@ -1,0 +1,46 @@
+\documentclass[11pt]{book} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[latin1]{inputenc}   % umlaute in input file
+\usepackage[english]{babel}     % newgerman: Worttrennung, Befehle für Umlaute
+\usepackage{hyperref}           % hyperlinks
+\usepackage{tex4ebook}          % title page is now more approproate for ebooks
+\newcommand\myasterism{%
+  \par\bigskip\noindent\hfill\pgfornament[width=17pt]{4}\hfill\null\par\bigskip
+}
+
+%%% options %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\parindent}{0pt}     % no identation for pragraph
+                                % inter paragraph spacing is config'ed by reader
+
+%%% title page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{12 Aspects of an Awakened Beings in Green Buddhism}
+\author{Logan Streondj}
+\date{}
+\begin{document}
+% \Preamble{xhtml}
+%\Configure{CoverMimeType}{image/jpeg}
+\coverimage    {images/cover_medium.png}
+%\EndPreamble
+\DeclareLanguage{english}{en} % English language ebook
+\Configure{UniqueIdentifier}{http://liberit.ca}
+
+%\Configure{CoverImage} {\HPage{} \ifvmode \IgnorePar\fi \EndP\HCode{<div class="cover-image"\>}\expandafter\csname opf:registerfilename\endcsname\FileName} {\HCode{</div>}\EndHPage{}}
+
+
+
+\maketitle
+\input{copyright}
+%\tableofcontents
+
+%%% Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{stepstoenlightenment.tex}
+
+
+\end{document}
+
+

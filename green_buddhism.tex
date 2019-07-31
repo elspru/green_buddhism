@@ -1,5 +1,28 @@
 \documentclass[10pt]{report}
 \usepackage{green_buddhism}
+% \usepackage[T1]{fontenc}
+% \usepackage{kpfonts,baskervald}
+\usepackage{pgfornament}
+% \usepackage[toc,page]{appendix}
+% 
+\usepackage[autostyle]{csquotes}
+% 
+% % \usepackage[
+% %     backend=biber,
+% %     style=authoryear-icomp,
+% %     sortlocale=en_US,
+% %     natbib=true,
+% %     url=false, 
+% %     doi=true,
+% %     eprint=false
+% % ]{biblatex}
+% \addbibresource{stepstoenlightenment/overview.bib}
+% \usepackage{booktabs}
+% \usepackage{tabulary}
+\newcommand\myasterism{%
+  \par\bigskip\noindent\hfill\pgfornament[width=17pt]{4}\hfill\null\par\bigskip
+}
+
 \title{Green Buddhism: A Programmer's Religion}
 %\subtitle{Enjoying a life of liberty}
 \author{Logan Streondj \\
@@ -8,48 +31,49 @@
 \begin{titlepage}
 \maketitle
 \input{introductory}
-\section{recent reform}
-\begin{itemize}
-  \item added section for living planets (\ref{livingplanets}) 2017/10/14
-  \item added communications satelitte lifetime (\ref{comsatlife}) 2017/10/10
-  \item added section for living planets (\ref{livingplanets}) 2017/10/14
-  \item added section of future lives glance (\ref{future_lives}) 2017/09/18
-  \item added section of Flavius Arbogast lifetime (\ref{arbogast}) 2017/09/18
-  \item added section on long term plan (\ref{intergalacticmission}) 2017/06/04
-  \item added chapter on planets for robots (\ref{robotPlanets}) 2017/05/16
-  \item added section on Buddhism (\ref{Buddhism}) 2017/03/17
-  \item added Grey Alien past lives (\ref{greyMiner}) 2017/01/01
-  \item added Social Feasibility section (\ref{socialfeasible}) 2016/12/19
-  \item added World Religions part (\ref{worldreligions}) 2016/10/20
-  \item added applicable milky way galaxy history (\ref{history:milkyway})
-  \item added English Pirate (\ref{reincarnation:pirate}) 2016/10/09
-  \item added War Widow (\ref{reincarnation:widow}) 2016/10/07
-  \item added Mammoth Hunter (\ref{reincarnation:mammoth}) 2016/10/04
-  \item added Climbing the Reincarnation Stairs (\ref{chapter:climbing})
-2016/10/04
-  \item added my one muslim reincarnation (\ref{reincarnation:muslim})
-2016/10/04
-  \item added began itinerary to awakening part (\ref{awakening}) 2016/10/03
-  \item added a Logan reincarnation entry about the pagan castle
-(\ref{reincarnation:arwald}) 2016/10/03
-  \item added Electronic Bodies section (\ref{history:electronic}) 2016/09/30
-  \item added Terms of Peaceful Trade Relations section (\ref{terms}) 2016/09/30
-  \item added Living in Peace Chapter (\ref{peace}) 2016/09/29
-  \item added What is the story of Green Buddhism? (\ref{whatstory}) 2016/09/29
-  \item added grey population distribution subsection (\ref{popdist})
-2016/10/28
- \item updated Arecibo section (\ref{arecibo}) 2016/09/28
- \item added bibilography (\ref{bibliography}) 2016/09/28
-\end{itemize}
+%\section{recent reform}
+%\begin{itemize}
+%  \item added section for living planets (\ref{livingplanets}) 2017/10/14
+%  \item added communications satelitte lifetime (\ref{comsatlife}) 2017/10/10
+%  \item added section for living planets (\ref{livingplanets}) 2017/10/14
+%  \item added section of future lives glance (\ref{future_lives}) 2017/09/18
+%  \item added section of Flavius Arbogast lifetime (\ref{arbogast}) 2017/09/18
+%  \item added section on long term plan (\ref{intergalacticmission}) 2017/06/04
+%  \item added chapter on planets for robots (\ref{robotPlanets}) 2017/05/16
+%  \item added section on Buddhism (\ref{Buddhism}) 2017/03/17
+%  \item added Grey Alien past lives (\ref{greyMiner}) 2017/01/01
+%  \item added Social Feasibility section (\ref{socialfeasible}) 2016/12/19
+%  \item added World Religions part (\ref{worldreligions}) 2016/10/20
+%  \item added applicable milky way galaxy history (\ref{history:milkyway})
+%  \item added English Pirate (\ref{reincarnation:pirate}) 2016/10/09
+%  \item added War Widow (\ref{reincarnation:widow}) 2016/10/07
+%  \item added Mammoth Hunter (\ref{reincarnation:mammoth}) 2016/10/04
+%  \item added Climbing the Reincarnation Stairs (\ref{chapter:climbing})
+%2016/10/04
+%  \item added my one muslim reincarnation (\ref{reincarnation:muslim})
+%2016/10/04
+%  \item added began itinerary to awakening part (\ref{awakening}) 2016/10/03
+%  \item added a Logan reincarnation entry about the pagan castle
+%(\ref{reincarnation:arwald}) 2016/10/03
+%  \item added Electronic Bodies section (\ref{history:electronic}) 2016/09/30
+%  \item added Terms of Peaceful Trade Relations section (\ref{terms}) 2016/09/30
+%  \item added Living in Peace Chapter (\ref{peace}) 2016/09/29
+%  \item added What is the story of Green Buddhism? (\ref{whatstory}) 2016/09/29
+%  \item added grey population distribution subsection (\ref{popdist})
+%2016/10/28
+% \item updated Arecibo section (\ref{arecibo}) 2016/09/28
+% \item added bibilography (\ref{bibliography}) 2016/09/28
+%\end{itemize}
 \end{titlepage}
 \tableofcontents
 \input{galaxyDomainStrategy}
-\input{religionExpose}
+\input{stepstoenlightenment}
 \input{awakening}
 \input{death}
 \input{charm}
 \input{robotBodies}
 \input{robotPlanets}
+\input{religionExpose}
 \input{loganReincarnation}
 \input{what_is_green_buddhism} 
 \printbibliography{}\label{bibliography}

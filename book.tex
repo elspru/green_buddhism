@@ -1,0 +1,96 @@
+\documentclass[11pt]{book} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% preample %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%% packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[T1]{fontenc}        % euro quality fonts [T1] (togeth. w/ textcomp)
+\usepackage{textcomp, amssymb}  % additional symbols (there are more packages)
+\usepackage[latin1]{inputenc}   % umlaute in input file
+\usepackage[english]{babel}     % newgerman: Worttrennung, Befehle für Umlaute
+\usepackage{anysize}            % margin package sets tighter margins
+\newcommand\myasterism{%
+  \par\bigskip\noindent\hfill\pgfornament[width=17pt]{4}\hfill\null\par\bigskip
+}
+
+\usepackage[margin=1in, paperwidth=6in, paperheight=9in]{geometry}
+\usepackage{ifpdf}              % if pdflatex then ... else ...
+%newer versions of latex don't need pdftex and dvips argument respectively
+\ifpdf
+  \usepackage{aeguill}          % PS converted CM fonts for better acro preview
+  \usepackage[pdftex]{graphicx} % graphics packages
+  \usepackage[pdftex]{color}    % color packages
+  \usepackage[pdftex]{hyperref}
+\else
+  \usepackage[dvips]{graphicx}  % graphics packages
+  \usepackage[dvips]{hyperref}
+\fi
+
+%%% style and finetuning %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% pagestyle
+\pagestyle{plain}               % headings, empty, plain
+
+\hypersetup{colorlinks=false}   % don't print colored links on paper
+
+% no indentation for paragraphs and space inbetween paragraphs  (euro standard)
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 2pt minus 1pt}
+
+\renewcommand{\baselinestretch}{1.05}
+
+%%% hacks %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% hyperref must be (almost) last command of preample
+% E.g. The \href{http://www.ctan.org}{CTAN} website.
+% E.g. \author{First- Lastname $<$\href{mailto: email@domain}{email@domain}$>$}
+
+\ifpdf
+  \usepackage[pdftex]{hyperref}
+\else
+  \usepackage[dvips]{hyperref}
+\fi
+\hypersetup{colorlinks=false}   % don't print colors on paper
+
+
+\begin{document}
+%%% tile page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{titlepage}
+\thispagestyle{empty}
+
+\hrule
+\begin{center}
+{\bf\LARGE From Debt to Riches}
+
+\vspace{0.7cm}
+  --- Copyright LiberIT (2019) All rights reserved. ---
+
+\vspace{2cm}
+\begin{figure}[!htbp]
+ \centering
+ \includegraphics[width=1.0\textwidth]{images/cover_medium}
+\end{figure}
+
+\end{center}
+\end{titlepage}
+
+
+\newpage %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setcounter{page}{1}\pagenumbering{roman}
+
+
+\tableofcontents
+
+\newpage
+
+\setcounter{page}{1}\pagenumbering{arabic}
+
+
+\input{green_buddhism.tex}
+
+\end{document}
+
+
